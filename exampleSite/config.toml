@@ -3,8 +3,8 @@ languageCode = "en-US"
 defaultContentLanguage = "en"
 
 title = "Hugo Learn Documentation"
-theme = "hugo-theme-learn"
-themesdir = "../.."
+theme = "."
+themesdir = ".."
 metaDataFormat = "yaml"
 defaultContentLanguageInSubdir= true
 
@@ -12,7 +12,7 @@ defaultContentLanguageInSubdir= true
   editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
   description = "Documentation for Hugo Learn Theme"
   author = "Mathieu Cornic"
-  showVisitedLinks = true
+  showVisitedLinks = false
   disableBreadcrumb = false
   disableNextPrev = false
   disableLandingPageButton = true
