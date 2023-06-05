@@ -3,10 +3,7 @@
 /* Tags */
 @import "tags.css";
 
-@font-face {
-  font-family: IBM Plex Sans;
-  src: url(https://fonts.googleapis.com/css?family=IBM+Plex+Sans:300,400);
-}
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@300;400&display=swap');
 
 #top-github-link, #body #breadcrumbs {
     position: relative;
@@ -69,9 +66,6 @@ b, strong, label, th {
 }
 #grav-logo path {
     fill: #fff !important;
-}
-#sidebar {
-    font-weight: 400 !important;
 }
 fieldset {
     border: 1px solid #ddd;
@@ -166,7 +160,7 @@ textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[typ
     width: 300px;
     bottom: 0;
     left: 0;
-    font-weight: 400;
+    font-weight: 300;
     font-size: 15px;
 }
 #sidebar a {
@@ -444,14 +438,14 @@ h2, h3, h4, h5, h6 {
     font-family: "IBM Plex Sans", "Helvetica", "Tahoma", "Geneva", "Arial", serif;
     text-rendering: optimizeLegibility;
     color: #5e5e5e;
-    font-weight: 400;
+    font-weight: 300;
 }
 h1 {
     font-family: "IBM Plex Sans", "Helvetica", "Tahoma", "Geneva", "Arial", sans-serif;
     text-align: center;
-    text-transform: uppercase;
+    /* text-transform: uppercase; */
     color: #222;
-    font-weight: 400;
+    font-weight: 300;
 }
 blockquote {
     border-left: 10px solid #F0F2F4;

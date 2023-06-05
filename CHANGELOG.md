@@ -1,5 +1,12 @@
 # Changelog
 
+## v2.5.1 (05/06/2023)
+
+- Changes the basic theme: fonts, colors, etc.
+- Introduces flutter theme
+- Removes prev next buttons from home page
+- 
+
 ## v2.5.0 (01/06/2020)
 
 #### New features

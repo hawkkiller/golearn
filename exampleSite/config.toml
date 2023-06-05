@@ -6,16 +6,17 @@ title = "Hugo Learn Documentation"
 theme = "."
 themesdir = ".."
 metaDataFormat = "yaml"
-defaultContentLanguageInSubdir= true
+defaultContentLanguageInSubdir = false
 
 [params]
-  editURL = "https://github.com/matcornic/hugo-theme-learn/edit/master/exampleSite/content/"
-  description = "Documentation for Hugo Learn Theme"
+  editURL = "https://github.com/hawkkiller/golearn/edit/master/exampleSite/content/"
+  description = "Documentation for GoLearn Theme"
   author = "Mathieu Cornic"
   showVisitedLinks = false
   disableBreadcrumb = false
-  disableNextPrev = false
+  disableNextPrev = true
   disableLandingPageButton = true
+  disableLanguageSwitchingButton = false
   disableMermaid = false
   customMermaidURL = "https://unpkg.com/mermaid@8.8.0/dist/mermaid.min.js"
   titleSeparator = "::"
