@@ -235,7 +235,7 @@ figcaption h4 {
 }
 
 @media only all and (max-width: 47.938em) {
-  #breadcrumbs .links, #top-github-link-text {
+  #breadcrumbs #top-github-link-text {
       display: none;
   }
 }

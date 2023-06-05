@@ -15,7 +15,7 @@ defaultContentLanguageInSubdir = false
   showVisitedLinks = false
   disableBreadcrumb = false
   disableShortcutsTitle = true
-  disableNextPrev = true
+  disableNextPrev = false
   disableLandingPageButton = true
   disableLanguageSwitchingButton = false
   disableMermaid = false
@@ -28,10 +28,10 @@ home = [ "HTML", "RSS", "JSON"]
 
 [Languages]
 [Languages.en]
-title = "Documentation for Hugo Learn Theme"
+title = "GoLearn Docs"
 weight = 1
 languageName = "English"
-landingPageURL = "/en"
+landingPageURL = "/"
 landingPageName = "<i class='fas fa-home'></i> Home"
 
 # [[Languages.en.menu.shortcuts]]

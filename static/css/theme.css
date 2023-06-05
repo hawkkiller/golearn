@@ -489,13 +489,11 @@ select[multiple=multiple]:focus {
   margin-bottom: 3rem;
 }
 
-@media only all and (max-width: 59.938em) {
-  #body #navigation {
-    position: static;
-    margin-right: 0 !important;
-    width: 100%;
-    display: table;
-  }
+#body #navigation {
+  position: static;
+  margin-right: 0 !important;
+  width: 100%;
+  display: table;
 }
 
 #body .nav {
@@ -516,21 +514,19 @@ select[multiple=multiple]:focus {
   text-align: center;
 }
 
-@media only all and (max-width: 59.938em) {
-  #body .nav {
-    display: table-cell;
-    position: static;
-    top: auto;
-    width: 50%;
-    text-align: center;
-    height: 100px;
-    line-height: 100px;
-    padding-top: 0;
-  }
+#body .nav {
+  display: table-cell;
+  position: static;
+  top: auto;
+  width: 50%;
+  text-align: center;
+  height: 100px;
+  line-height: 100px;
+  padding-top: 0;
+}
 
-  #body .nav>i {
-    display: inline-block;
-  }
+#body .nav>i {
+  display: inline-block;
 }
 
 #body .nav:hover {
