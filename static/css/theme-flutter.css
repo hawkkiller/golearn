@@ -1,44 +1,81 @@
+:root {
 
-:root{
+  --MAIN-TEXT-color: #222;
+  /* Color of text by default */
+  --MAIN-TITLES-TEXT-color: #161616;
+  /* Color of titles h2-h3-h4-h5 */
+  --MAIN-LINK-color: #0f62fe;
+  /* Color of links */
+  --MAIN-LINK-HOVER-color: #0f62fe;
+  /* Color of hovered links */
+  --MAIN-ANCHOR-color: #0f62fe;
+  /* color of anchors on titles */
 
-  --MAIN-TEXT-color:#222; /* Color of text by default */
-  --MAIN-TITLES-TEXT-color: #161616; /* Color of titles h2-h3-h4-h5 */
-  --MAIN-LINK-color:#0f62fe; /* Color of links */
-  --MAIN-LINK-HOVER-color:#0f62fe; /* Color of hovered links */
-  --MAIN-ANCHOR-color: #0f62fe; /* color of anchors on titles */
+  --MENU-HOME-LINK-color: #323232;
+  /* Color of the home button text */
+  --MENU-HOME-LINK-HOVER-color: #5e5e5e;
+  /* Color of the hovered home button text */
 
-  --MENU-HOME-LINK-color: #323232; /* Color of the home button text */
-  --MENU-HOME-LINK-HOVER-color: #5e5e5e; /* Color of the hovered home button text */
+  --MENU-HEADER-BG-color: #000;
+  /* Background color of menu header */
+  --MENU-HEADER-BORDER-color: #d8d8d8;
+  /*Color of menu header border */
+  --m3-outline-color: #d8d8d8;
 
-  --MENU-HEADER-BG-color:#1C90F3; /* Background color of menu header */
-  --MENU-HEADER-BORDER-color:#33a1ff; /*Color of menu header border */
+  --MENU-SEARCH-BG-color: #fff;
+  /* Search field background color (by default borders + icons) */
+  --MENU-SEARCH-BOX-color: #d8d8d8;
+  /* Override search field border color */
+  --MENU-SEARCH-BOX-ICONS-color: #161616;
+  /* Override search field icons color */
 
-  --MENU-SEARCH-BG-color:#167ad0; /* Search field background color (by default borders + icons) */
-  --MENU-SEARCH-BOX-color: #33a1ff; /* Override search field border color */
-  --MENU-SEARCH-BOX-ICONS-color: #a1d2fd; /* Override search field icons color */
+  --MENU-SECTIONS-ACTIVE-BG-color: #fff;
+  /* Background color of the active section and its childs */
+  --MENU-SECTIONS-BG-color: #fff;
+  /* Background color of other sections */
+  --MENU-SECTIONS-LINK-color: #161616;
+  /* Color of links in menu */
+  --MENU-SECTIONS-LINK-HOVER-color: #0f62fe;
+  /* Color of links in menu, when hovered */
+  --MENU-SECTION-ACTIVE-CATEGORY-color: #0f62fe;
+  /* Color of active category text */
+  --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #fff;
+  /* Color of background for the active category (only) */
 
-  --MENU-SECTIONS-ACTIVE-BG-color:#20272b; /* Background color of the active section and its childs */
-  --MENU-SECTIONS-BG-color:#252c31; /* Background color of other sections */
-  --MENU-SECTIONS-LINK-color: #ccc; /* Color of links in menu */
-  --MENU-SECTIONS-LINK-HOVER-color: #e6e6e6;  /* Color of links in menu, when hovered */
-  --MENU-SECTION-ACTIVE-CATEGORY-color: #161616; /* Color of active category text */
-  --MENU-SECTION-ACTIVE-CATEGORY-BG-color: #fff; /* Color of background for the active category (only) */
-
-  --MENU-VISITED-color: #33a1ff; /* Color of 'page visited' icons in menu */
-  --MENU-SECTION-HR-color: #20272b; /* Color of <hr> separator in menu */
-
+  --MENU-VISITED-color: #0f62fe;
+  /* Color of 'page visited' icons in menu */
+  --MENU-SECTION-HR-color: #20272b;
+  /* Color of <hr> separator in menu */
 }
 
 body {
   color: var(--MAIN-TEXT-color) !important;
 }
 
-textarea:focus, input[type="email"]:focus, input[type="number"]:focus, input[type="password"]:focus, input[type="search"]:focus, input[type="tel"]:focus, input[type="text"]:focus, input[type="url"]:focus, input[type="color"]:focus, input[type="date"]:focus, input[type="datetime"]:focus, input[type="datetime-local"]:focus, input[type="month"]:focus, input[type="time"]:focus, input[type="week"]:focus, select[multiple=multiple]:focus {
+textarea:focus,
+input[type="email"]:focus,
+input[type="number"]:focus,
+input[type="password"]:focus,
+input[type="search"]:focus,
+input[type="tel"]:focus,
+input[type="text"]:focus,
+input[type="url"]:focus,
+input[type="color"]:focus,
+input[type="date"]:focus,
+input[type="datetime"]:focus,
+input[type="datetime-local"]:focus,
+input[type="month"]:focus,
+input[type="time"]:focus,
+input[type="week"]:focus,
+select[multiple=multiple]:focus {
   border-color: none;
   box-shadow: none;
 }
 
-h2, h3, h4, h5 {
+h2,
+h3,
+h4,
+h5 {
   color: var(--MAIN-TITLES-TEXT-color) !important;
 }
 
@@ -54,8 +91,8 @@ a:hover {
   color: var(--MAIN-LINK-HOVER-color);
 }
 
-#sidebar ul li.visited > a .read-icon {
-color: var(--MENU-VISITED-color);
+#sidebar ul li.visited>a .read-icon {
+  color: var(--MENU-VISITED-color);
 }
 
 #body a.highlight:after {
@@ -69,21 +106,28 @@ color: var(--MENU-VISITED-color);
   transition: width 0.5s ease;
   background-color: var(--MAIN-LINK-HOVER-color);
 }
+
 #sidebar {
-background-color: var(--MENU-SECTIONS-BG-color);
+  background-color: var(--MENU-SECTIONS-BG-color);
+  border-color: var(--m3-outline-color);
 }
+
 #sidebar #header-wrapper {
   background: var(--MENU-HEADER-BG-color);
   color: var(--MENU-SEARCH-BOX-color);
   border-color: var(--MENU-HEADER-BORDER-color);
 }
+
 #sidebar .searchbox {
-border-color: var(--MENU-SEARCH-BOX-color);
+  border-color: var(--MENU-SEARCH-BOX-color);
   background: var(--MENU-SEARCH-BG-color);
 }
-#sidebar ul.topics > li.parent, #sidebar ul.topics > li.active {
+
+#sidebar ul.topics>li.parent,
+#sidebar ul.topics>li.active {
   background: var(--MENU-SECTIONS-ACTIVE-BG-color);
 }
+
 #sidebar .searchbox * {
   color: var(--MENU-SEARCH-BOX-ICONS-color);
 }
@@ -96,7 +140,7 @@ border-color: var(--MENU-SEARCH-BOX-color);
   color: var(--MENU-SECTIONS-LINK-HOVER-color);
 }
 
-#sidebar ul li.active > a {
+#sidebar ul li.active>a {
   background: var(--MENU-SECTION-ACTIVE-CATEGORY-BG-color);
   color: var(--MENU-SECTION-ACTIVE-CATEGORY-color) !important;
 }
@@ -114,15 +158,15 @@ border-color: var(--MENU-SEARCH-BOX-color);
 }
 
 #homelinks {
-background: var(--MENU-HEADER-BG-color);
-background-color: var(--MENU-HEADER-BORDER-color);
-border-bottom-color: var(--MENU-HEADER-BORDER-color);
+  background: var(--MENU-HEADER-BG-color);
+  background-color: var(--MENU-HEADER-BORDER-color);
+  border-bottom-color: var(--MENU-HEADER-BORDER-color);
 }
 
 #homelinks a {
-color: var(--MENU-HOME-LINK-color);
+  color: var(--MENU-HOME-LINK-color);
 }
 
 #homelinks a:hover {
-color: var(--MENU-HOME-LINK-HOVERED-color);
+  color: var(--MENU-HOME-LINK-HOVERED-color);
 }
