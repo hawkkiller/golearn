@@ -1,5 +1,4 @@
 :root {
-
   --MAIN-TEXT-color: #222;
   /* Color of text by default */
   --MAIN-TITLES-TEXT-color: #161616;
@@ -16,18 +15,13 @@
   --MENU-HOME-LINK-HOVER-color: #5e5e5e;
   /* Color of the hovered home button text */
 
-  --MENU-HEADER-BG-color: #000;
-  /* Background color of menu header */
-  --MENU-HEADER-BORDER-color: #000;
+  --MENU-HEADER-BG-color: #fff;
   /*Color of menu header border */
   --m3-outline-color: #d8d8d8;
 
-  --MENU-SEARCH-BG-color: #fff;
-  /* Search field background color (by default borders + icons) */
-  --MENU-SEARCH-BOX-color: #d8d8d8;
-  /* Override search field border color */
-  --MENU-SEARCH-BOX-ICONS-color: #161616;
-  /* Override search field icons color */
+  --MENU-SEARCH-BG-color: #ebecef;
+  --MENU-SEARCH-BOX-color: #000;
+  --MENU-SEARCH-BOX-ICONS-color: #9aa1b1;
 
   --MENU-SECTIONS-ACTIVE-BG-color: #fff;
   /* Background color of the active section and its childs */
@@ -115,7 +109,7 @@ a:hover {
 #sidebar #header-wrapper {
   background: var(--MENU-HEADER-BG-color);
   color: var(--MENU-SEARCH-BOX-color);
-  border-color: var(--MENU-HEADER-BORDER-color);
+  border-color: var(--m3-outline-color);
 }
 
 #sidebar .searchbox {
@@ -128,8 +122,15 @@ a:hover {
   background: var(--MENU-SECTIONS-ACTIVE-BG-color);
 }
 
-#sidebar .searchbox * {
+#sidebar .searchbox label,
+#sidebar .searchbox span,
+#sidebar .searchbox input::placeholder {
   color: var(--MENU-SEARCH-BOX-ICONS-color);
+}
+
+#sidebar .searchbox input {
+  color: var(--MENU-SEARCH-BOX-color);
+  font-weight: 400;
 }
 
 #sidebar a {
@@ -159,8 +160,8 @@ a:hover {
 
 #homelinks {
   background: var(--MENU-HEADER-BG-color);
-  background-color: var(--MENU-HEADER-BORDER-color);
-  border-bottom-color: var(--MENU-HEADER-BORDER-color);
+  background-color: var(--m3-outline-color);
+  border-bottom-color: var(--m3-outline-color);
 }
 
 #homelinks a {
